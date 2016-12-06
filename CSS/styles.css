@@ -28,8 +28,12 @@
 
 }
 
-body {
-  background: url("../img/hexellence.png");
+.about {
+
+background: #67B26F; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 }
 
 
@@ -58,6 +62,7 @@ header {
         
 }
 
+/*Nav start*/
 nav {
     width: 100%;
     background: rgba(255,255,255,1);
@@ -83,7 +88,7 @@ nav li {
 
 a:link,
 a:visited {
-  color: #9abeb7;
+  color: #4ca2cc;
   text-decoration: none;
 }
 a:focus {
@@ -91,17 +96,19 @@ a:focus {
 }
 
 a:hover {
-	color: #ccf9ce;
+	color: #66b26f;
 }
 
 a:active {
     color: #a595b2;
 }
+/*Nav end*/
 
 article {
-    width: 70%;
+    height: 100%;
+    width: 60%;
     margin: 45px auto 0 auto;
-    background: rgba(255,213,223,.5);
+    background: rgba(255,255,255,.25);
     box-shadow: 0 0 1px 0;
     text-align: center;
 }
@@ -111,10 +118,9 @@ h2 {
     margin-left: .50em;
     margin-right: .50em;
     font-family: 'Hind', sans-serif;
-    color: #9abeb7;
+    color: #964790;
     font-size: 25px;
     text-align: left;
-	border-bottom: 1px solid #9abeb7;
 }
 
 h3 {
@@ -130,6 +136,7 @@ h3 {
 
 p {
     font-family: 'Abhaya Libre', serif;
+    font-size: 1.25em;
     text-align: left;
     margin-left: .80em;
     margin-right: .80em;
@@ -137,8 +144,17 @@ p {
 }
 
 /*Contact Page*/
+.contact {
+    background: white;
+}
+
+.contact h1 {
+    color: #964790;
+    text-align: left;
+}
+
 form {
-  padding: 10px;
+    padding-left: 45px;
 }
 
 label, 
@@ -149,7 +165,7 @@ textarea {
 }
 
 input[type=submit] {
-  background: #9abeb7;
+  background: #4ca2cc;
   border: none;
   border-radius: 4px;
     color: #fff;
@@ -158,6 +174,8 @@ input[type=submit] {
 
 input:focus,
 textarea:focus {
-  background: #ccf9ce;
+  background: #67B26F; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transition: background .5s;
 }
