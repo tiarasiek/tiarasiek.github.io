@@ -37,11 +37,12 @@ background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, F
 }
 
 /*Start general/about styling*/
+
 article img {
     margin-top: 17%;
     padding: 0px;
-    height: 40%;
-    width: 40%;
+    height: 50%;
+    width: 50%;
     position: relative;
     border-radius: 50%;
 }
@@ -197,3 +198,118 @@ background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, F
 /*End Contact styling*/
 
 /*Portfolio styling*/
+
+.portfolio {
+    background: #67B26F; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: background .5s;
+}
+
+.portfolio h1 {
+    color: #964790;
+    font-size: 70px;
+    margin-bottom: auto;
+}
+
+/* Layout with Flexbox */
+.gallery {
+ display: flex;
+ flex-flow: row wrap;
+}
+
+figure {
+  background: none;
+  padding: 1em;
+  flex: 1 0 300px;
+  
+  /* Child & Also Parent   */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Specific Gallery Styling. Have Fun! */
+
+figure img {
+    max-width: 90%;
+    max-height: 80%;
+    margin: 2%;
+}
+
+
+/* Lightbox Overlay */
+/* hide  */
+.overlay {
+  display: none;
+  
+/* Overlay Styling   */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,.5);
+}
+
+/* show */
+.overlay:target {
+  display: block;
+ 
+  /* Flexbox Vertical & Horizontal Centering */
+  display: flex;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+    
+}
+
+/* Close Button  */
+.overlay a {
+  font-size: 1em;
+  color: #4ca2cc;
+  text-decoration: none;
+  
+}
+
+.thumbnail {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    border-bottom: 15px solid #964790;
+}
+
+/*Homepage styling*/
+
+.home {
+    background: url(../img/kindajean.png)
+}
+
+.home h1,
+.home h2,
+.home h3 {
+    display: block;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 100px;
+    padding: 100px 50px 0px 50px;
+    margin: none;
+}
+
+.home h2 {
+   font-size: 50px;
+    padding: -100px 50px 50px 50px;
+    margin-top: -50px;
+}
+
+.home h3 {
+    font-size: 20px;
+}
