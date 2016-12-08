@@ -100,7 +100,7 @@ a:hover {
 }
 
 a:active {
-    color: #a595b2;
+    color: #964790;
 }
 /*Nav end*/
 
@@ -150,11 +150,21 @@ p {
 
 .contact h1 {
     color: #964790;
-    text-align: left;
+    text-align: center;
+    padding: .15em;
 }
 
 form {
-    padding-left: 45px;
+    background: lightgrey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2em 1.5em;
+    padding-top: 4em;
+    width: 80%;
+    max-width: 400px;
+    min-width: 100px;
+    margin: auto;
 }
 
 label, 
@@ -164,12 +174,22 @@ textarea {
   margin: 10px;
 }
 
+label {
+    padding: .5em;
+    margin: 0;
+}
+
 input[type=submit] {
   background: #4ca2cc;
   border: none;
   border-radius: 4px;
     color: #fff;
   padding: 6px;
+}
+
+input[type=submit]:hover {
+    background: #66b26f;
+    cursor: pointer;
 }
 
 input:focus,
