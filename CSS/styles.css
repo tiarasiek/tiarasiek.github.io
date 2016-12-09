@@ -233,11 +233,12 @@ figure {
 /* Specific Gallery Styling. Have Fun! */
 
 figure img {
+    display: flex;
+    justify-content: center;
     max-width: 90%;
     max-height: 80%;
     margin: 2%;
 }
-
 
 /* Lightbox Overlay */
 /* hide  */
@@ -250,7 +251,7 @@ figure img {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.75);
 }
 
 /* show */
@@ -263,9 +264,10 @@ figure img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
-    
+    margin-top: 25px;
+    padding: 10px;
 }
+
 
 /* Close Button  */
 .overlay a {
@@ -284,6 +286,7 @@ figure img {
 .thumbnail:hover {
     border-bottom: 15px solid #964790;
 }
+
 
 /*Homepage styling*/
 
@@ -312,4 +315,14 @@ figure img {
 
 .home h3 {
     font-size: 20px;
+}
+
+.home h3 a:hover {
+    color: white;
+    background-size: cover;
+    background: #67B26F; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: background .5s;
+    padding: 5px;
 }
