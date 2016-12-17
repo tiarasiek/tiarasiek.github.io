@@ -237,7 +237,6 @@ figure {
   align-items: center;
 }
 
-/* Specific Gallery Styling. Have Fun! */
 
 figure img {
     display: flex;
@@ -275,6 +274,9 @@ figure img {
     padding: 10px;
 }
 
+figcaption {
+    padding: 1em;
+}
 
 /* Close Button  */
 .overlay a {
